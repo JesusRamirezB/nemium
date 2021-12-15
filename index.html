@@ -13,26 +13,85 @@
 </head>
 
 <body>
-    <section class="banner">
-    </section>
+    <section class="banner"></section>
     <div class="container">
         <section class="index">
-            <h1>VARIANTES DEL PROYECTO</h1>
+            <h1>Contenido del curso</h1>
             <div class="links">
-                <a href="#">Nemium A</a>
-                <a href="#">Nemium B</a>
-                <a href="#">Nemium C</a>
-                <a href="#">Nemium D</a>
-                <a href="#">Nemium E</a>
+                <a href="#CursoEsencial">Curso esencial de HTML y CSS</a>
+                <a href="#Setup">Setup o configuracion inicial</a>
+                <a href="#Conceptos">Conceptos Esenciales del Desarrollo Web</a>
+                <a href="#BoxModel">Modelo de caja</a>
             </div>
         </section>
         <section class="content">
-            <h1>Setup</h1>
+            <h1 id="CursoEsencial">Curso esencial de HTML y CSS</h1>
             <div class="list">
-                <i class="fab fa-chrome"></i>
+                <p>El contenido que se encuentra en esta pagina fue tomado del curso titulado "Curso esencial de HTML y CSS" de LeonidasEsteban.com. Este conteido se utilizo para rellenar esta pagina y al mismo tiempo repasar mientras practico HTML y CSS.
+                    Puedes encontrar el curso dando <a href="https://leonidasesteban.com/">CLICK AQUI</a>.</p>
+            </div>
+            <h1 id="Setup">Setup</h1>
+            <div class="list">
+                <img src="./img/chrome.png" alt="" class="icon">
                 <li>Google Chrome</li>
                 <p>Chrome va ser <strong>el navegador que utilizaremos en el curso</strong> por su extenso soporte de nuevos estandares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-                <li></li>
+                <img src="./img/vscode.png" alt="" class="icon">
+                <li>Visual Studio Code</li>
+                <p>Visual Studio Code es el <strong>editor de texto mas popular y potente del mercado actualmenete</strong>, su facil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar
+                    el lenguaje en el que se desenvuelva</p>
+
+                <img src="./img/github.png" alt="" class="icon">
+                <li>Github</li>
+                <p>Asi como en Facebook te encuentran tus amigos, en Github <strong>te encuentran programadoras y programadores</strong> de todo el mundo, en vex de subir fotos de tus viajes aqui subes tu codigo y puedes elegir hacerlo "open source" o guardarlo
+                    de manera privada, Github sera esencial para almacenar tu futuro portafolio.</p>
+                <blockquote>
+                    <p>"Este es el inicio de tu carrera como Desarrollador Web."</p>
+                    <figcaption>- Leonidas Esteban</figcaption>
+                </blockquote>
+            </div><br>
+            <h1 id="Conceptos">Conceptos Esenciales del Desarrollo Web</h1>
+            <div class="list">
+                <li>Qué es HTML</li>
+                <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componenete mas basico de la web. Define el significado y la estructura del contenido.</p>
+                <div class="html-code">
+                    &lt;!DOCTYPE html&gt;<br> &lt;html lang="en"&gt;<br> &lt;head&gt;
+                    <br> &lt;meta charset="UTF-8"&gt;<br> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br> &lt;title&gt;Document&lt;/title&gt;
+                    <br> &lt;/head&gt;
+                    <br> &lt;body&gt;
+                    <br> &lt;/body&gt;
+                    <br> &lt;/html&gt;
+                    <br>
+                </div><br>
+                <li>Etiquetas</li>
+                <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semantica al contenido de nuestro website y cada una tiene caracteristicas y usos diferentes aunque visualmente den un resultado similar.</p>
+                <p>Muchas etiquetas son facil de diferenciar como los headings o las imagenes y otras diferentes como header, footer, section o divm aqui es donde la semantica sera la respuesta y si sabemos un poco de ingles tambien podremos darnos una pequeña
+                    idea de su uso pero en este curso vamos usar las mas importantes y que seran parte de tu dia a dia como Software Developer.</p><br>
+                <li>DOM</li>
+                <p>El Document Object Model es una estructura de arbol que representara todos nuestros proyectos web como si un arbol genealogico fuera: padres, hijos, hermanos con niveles infinitos. Cuando entendemos esta anidacion podemos identificar dependencias,
+                    herencias en CSS y que tan complejo es nuestro proyecto.</p>
+                <img src="./img/dom.png" alt="" class="img-content"><br><br>
+                <li>Semántica</li>
+                <p>La semanticale brinda sentido a cada uno de los elementos que existen en un sitio web, algunos elementos seran meramente decorativos y no deben significar nada pero otros seran titulos y deberan estar en diferentes jerarquias o algunas
+                    secciones seran mas relevantes que otras, esto ayudara a los motores de busqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y seran las herramientas mas valiosas para estar en los primeros resultados de busqueda
+                    SEO. Tambien ayudara a la accesibilidad de tu sitio web, para personas con habilidades diferentes puedan entender cada contenido.</p><br>
+                <li>Atributos</li>
+                <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como 'class' pero otros atributos funcionan
+                    en solo alguna etiquetas como src</p><br>
+                <li>CSS</li>
+                <p>Hojas de Estilo en Cascada (del ingles Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentacion de documentos HTML.</p>
+                <img src="./img/image 5.png" alt="" class="img-content"><br><br>
+            </div>
+            <h1 id="BoxModel">Modelo de caja</h1>
+            <div class="list">
+                <h2>El modelo de caja esta compuesto por:</h2>
+                <p>Chrome va a ser el navegador que utilizarmos en el curso por su extenso soporte de nuevos estandares y herramientas de desarrollo avanzadas y de amigable uso.</p>
+                <p>1. Tamaño del contenido / ancho y alto<br>2. Padding / Relleno<br>3. Border / Bordes<br>4. Margin / Margenes</p>
+                <h2>Propiedades fisicas para el modelo de caja:</h2>
+                <p>&bull; width / height<br><br>&bull; margin / margin top | margin right | margin bottom | margin left<br><br>&bull; border / border top | border right | border bottom | border left<br><br>&bull; padding / padding top | padding right | padding
+                    bottom | padding left</p>
+                <h2>Propiedades logicas para el modelo de caja:</h2>
+                <p>&bull; inline-size / block-size<br><br>&bull; margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end<br><br>&bull; border-block | border-inline | border-block-start | border-block-end
+                    | border-inline-start | border-inline-end<br><br>&bull; padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</p>
             </div>
         </section>
     </div>

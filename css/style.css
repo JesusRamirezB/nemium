@@ -1,8 +1,11 @@
-*{
-    text-decoration: none;    background-color: white;
-
+* {
+    text-decoration: none;
+    background-color: white;
 }
+
+
 /* Banner style */
+
 .banner {
     background-image: url("../img/banner.png");
     height: 150px;
@@ -10,7 +13,9 @@
     background-size: cover;
 }
 
+
 /* Container Style */
+
 .container {
     width: 90%;
     margin: auto;
@@ -18,21 +23,22 @@
 
 
 /* Index Style */
-.index{
+
+.index {
     display: flex;
     flex-direction: column;
 }
 
-.index .links{
+.index .links {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: start;
     grid-gap: 10px;
 }
 
-.index .links a{
+.index .links a {
     display: flex;
     align-items: center;
     height: 50px;
@@ -40,29 +46,67 @@
     border-radius: 10px;
     font-size: 20px;
     padding-left: 15px;
+    color: lightslategrey;
 }
-.index .links a:hover{
+
+.index .links a:hover {
     background-color: black;
     color: white;
 }
 
+
 /* Content style */
 
-.content .list{
+.content h1 {
+    font-size: 30px;
+}
+
+.content .list {
     list-style-type: decimal;
 }
 
-.content .list i{
-    font-size: 100px;
+.content .list .icon {
+    width: 50px;
     padding-bottom: 20px;
 }
 
-.content .list li{
+.content .list li {
     font-size: 30px;
-    border-bottom: solid;
     border-bottom: 5px solid gray;
 }
 
-.content .list p{
+.content .list p {
     font-size: 20px;
+}
+
+.content .list blockquote {
+    border-left: 5px solid gray;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.html-code {
+    background-color: #fcb603;
+    padding: 20px;
+}
+
+.img-content {
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .index .links a {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 20px;
+        color: lightslategrey;
+    }
 }
